@@ -1,0 +1,34 @@
+/*!
+Theme Name: Nackt Five
+Theme URI: http://jtpenezich.com
+Description: Naked Template for WordPress 
+Author: Jason Penezich
+Author URI: http://jtpenezich.com
+Version: 3.1
+
+License:
+License URI:
+*/
+
+// Theme Dependencies
+@import "compass/css3";
+@import "reset";
+@import "var";
+@import "grid";
+
+//Author Dependencies
+@import "icons";
+@import "typography";
+
+// Sections
+@import "header";
+@import "nav";
+@import "footer";
+@import "pagination";
+
+// WordPress Defaults
+@import "wp-comments";
+@import "wp-core";
+@import "wp-widgets";
+@import "wp-post";
+//@import "wp-misc";

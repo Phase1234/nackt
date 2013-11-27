@@ -1,0 +1,23 @@
+/* == WP CSS - post_class() == */
+
+.post-id {}
+
+.post {
+	ul {
+		list-style: disc;
+	}
+
+	ol {
+		list-style: upper-roman;
+	}
+}
+
+.page {}
+.attachment {}
+.sticky {}
+.hentry {}
+.category-misc {}
+.category-example {}
+.tag-news {}
+.tag-wordpress {}
+.tag-markup {}

@@ -1,0 +1,80 @@
+.nav {
+    font-size: 14px;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    list-style: none;
+    text-align: justify;
+
+    // Use this to have wide-screen navigation stay justified
+     @include breakpoint(big) {
+        text-align: right;
+        &:after {
+            content: '';
+            width: 100%;
+            display: inline-block;
+        }
+     }
+}
+
+.nav li {
+    width: 100%;
+    display: block;
+
+    @include breakpoint(big) {
+        width:auto;
+        display: inline-block;
+    }
+}
+
+.nav a {
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+// Nav Button
+.nav .nav-toggle {
+    &:after {
+        content: '\F013';
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        font:normal 20px/1 'FontAwesome';
+        vertical-align: middle;
+        padding-left: 10px
+    }
+
+    @include breakpoint(big) {
+        display: none;
+    }
+}
+
+// Wide Screen Layout
+@include breakpoint(big) {
+    /* this targets all sub menus */
+    .nav ul ul {
+        display: none; /* hide all sub menus from view */
+        position: absolute;
+        top: 35px; /* this should be the same height as the top level menu -- height + padding + borders */
+        text-align: left;
+        
+        li {
+            /* this targets all submenu items */
+            width: 250px; /* set to the width you want your sub menus to be. This needs to match the value we set below */
+            background: #666;
+            display: block;
+
+            a {
+                padding: 5px 10px;
+            }
+        }
+    }
+
+    .nav ul li:hover > ul {
+        display: block; /* show sub menus when hovering over a parent */
+    }
+}

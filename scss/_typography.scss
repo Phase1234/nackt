@@ -1,0 +1,48 @@
+body, select, input, textarea { 
+    color: #333;
+}
+
+p {
+    margin: 18px 0px
+}
+
+a {
+    color: #03f;
+    text-decoration: none;
+}
+a:hover {
+    color: #333;
+}
+
+h1, .h1 {
+    font-size: 3em;
+}
+h2, .h2 {
+    font-size: 2.5em;
+}
+h3, .h3 {
+    font-size: 2em;
+}
+h4, .h4 {
+    font-size: 1.5em;
+}
+h5, .h5 {
+    font-size: 1.2em;
+}
+h6, .h6 {
+    font-size: 1em;
+}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+/*  j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }

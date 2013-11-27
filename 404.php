@@ -1,0 +1,1 @@
+<h2><?php _e('Error 404 - Page Not Found','nackt'); ?></h2>

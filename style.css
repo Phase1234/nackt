@@ -1,0 +1,3721 @@
+/*
+Theme Name: Nackt Five
+Theme URI: http://jtpenezich.com
+Description: Naked Template for WordPress 
+Author: Jason Penezich
+Author URI: http://jtpenezich.com
+Version: 3.1
+
+License:
+License URI:
+*/
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 50, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 74, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 95, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 108, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 117, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 126, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 134, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 142, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 152, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 164, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 173, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 181, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 189, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 198, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 205, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 209, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 221, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 231, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 243, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 255, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 266, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 280, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 292, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 304, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 319, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 329, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 339, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 350, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 363, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 372, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 382, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 395, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* line 401, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 403, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+.chromeframe {
+  position: absolute;
+  top: 0;
+}
+
+/* let's clear some floats */
+/* line 406, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 407, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 408, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 411, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+/* line 415, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+.group:after {
+  clear: both;
+}
+
+/* line 418, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_reset.scss */
+.group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* line 22, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_var.scss */
+body {
+  font: 1.2em/1.6 source-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* line 23, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_var.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #bada55;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 8, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.container:before,
+.container:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 16, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 19, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* line 24, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.row:before,
+.row:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 32, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 82, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 98, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11 {
+  float: left;
+}
+
+/* line 101, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.col-xs-1 {
+  width: 8.333333333333332%;
+}
+
+/* line 104, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.col-xs-2 {
+  width: 16.666666666666664%;
+}
+
+/* line 107, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.col-xs-3 {
+  width: 25%;
+}
+
+/* line 110, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.col-xs-4 {
+  width: 33.33333333333333%;
+}
+
+/* line 113, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.col-xs-5 {
+  width: 41.66666666666667%;
+}
+
+/* line 116, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.col-xs-6 {
+  width: 50%;
+}
+
+/* line 119, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.col-xs-7 {
+  width: 58.333333333333336%;
+}
+
+/* line 122, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.col-xs-8 {
+  width: 66.66666666666666%;
+}
+
+/* line 125, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.col-xs-9 {
+  width: 75%;
+}
+
+/* line 128, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.col-xs-10 {
+  width: 83.33333333333334%;
+}
+
+/* line 131, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.col-xs-11 {
+  width: 91.66666666666666%;
+}
+
+/* line 134, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+.col-xs-12 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 138, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .container {
+    max-width: 750px;
+  }
+
+  /* line 151, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11 {
+    float: left;
+  }
+
+  /* line 154, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-1 {
+    width: 8.333333333333332%;
+  }
+
+  /* line 157, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-2 {
+    width: 16.666666666666664%;
+  }
+
+  /* line 160, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  /* line 163, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-4 {
+    width: 33.33333333333333%;
+  }
+
+  /* line 166, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-5 {
+    width: 41.66666666666667%;
+  }
+
+  /* line 169, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  /* line 172, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-7 {
+    width: 58.333333333333336%;
+  }
+
+  /* line 175, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-8 {
+    width: 66.66666666666666%;
+  }
+
+  /* line 178, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  /* line 181, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-10 {
+    width: 83.33333333333334%;
+  }
+
+  /* line 184, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-11 {
+    width: 91.66666666666666%;
+  }
+
+  /* line 187, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  /* line 190, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-push-1 {
+    left: 8.333333333333332%;
+  }
+
+  /* line 193, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-push-2 {
+    left: 16.666666666666664%;
+  }
+
+  /* line 196, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-push-3 {
+    left: 25%;
+  }
+
+  /* line 199, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-push-4 {
+    left: 33.33333333333333%;
+  }
+
+  /* line 202, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-push-5 {
+    left: 41.66666666666667%;
+  }
+
+  /* line 205, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-push-6 {
+    left: 50%;
+  }
+
+  /* line 208, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-push-7 {
+    left: 58.333333333333336%;
+  }
+
+  /* line 211, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-push-8 {
+    left: 66.66666666666666%;
+  }
+
+  /* line 214, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-push-9 {
+    left: 75%;
+  }
+
+  /* line 217, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-push-10 {
+    left: 83.33333333333334%;
+  }
+
+  /* line 220, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-push-11 {
+    left: 91.66666666666666%;
+  }
+
+  /* line 223, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-pull-1 {
+    right: 8.333333333333332%;
+  }
+
+  /* line 226, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-pull-2 {
+    right: 16.666666666666664%;
+  }
+
+  /* line 229, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+
+  /* line 232, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-pull-4 {
+    right: 33.33333333333333%;
+  }
+
+  /* line 235, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-pull-5 {
+    right: 41.66666666666667%;
+  }
+
+  /* line 238, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+
+  /* line 241, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-pull-7 {
+    right: 58.333333333333336%;
+  }
+
+  /* line 244, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-pull-8 {
+    right: 66.66666666666666%;
+  }
+
+  /* line 247, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+
+  /* line 250, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-pull-10 {
+    right: 83.33333333333334%;
+  }
+
+  /* line 253, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-pull-11 {
+    right: 91.66666666666666%;
+  }
+
+  /* line 256, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+
+  /* line 259, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+
+  /* line 262, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 265, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+
+  /* line 268, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+
+  /* line 271, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 274, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+
+  /* line 277, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+
+  /* line 280, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 283, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+
+  /* line 286, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-sm-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 291, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .container {
+    max-width: 970px;
+  }
+
+  /* line 304, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11 {
+    float: left;
+  }
+
+  /* line 307, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-1 {
+    width: 8.333333333333332%;
+  }
+
+  /* line 310, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-2 {
+    width: 16.666666666666664%;
+  }
+
+  /* line 313, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-3 {
+    width: 25%;
+  }
+
+  /* line 316, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-4 {
+    width: 33.33333333333333%;
+  }
+
+  /* line 319, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-5 {
+    width: 41.66666666666667%;
+  }
+
+  /* line 322, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-6 {
+    width: 50%;
+  }
+
+  /* line 325, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-7 {
+    width: 58.333333333333336%;
+  }
+
+  /* line 328, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-8 {
+    width: 66.66666666666666%;
+  }
+
+  /* line 331, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-9 {
+    width: 75%;
+  }
+
+  /* line 334, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-10 {
+    width: 83.33333333333334%;
+  }
+
+  /* line 337, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-11 {
+    width: 91.66666666666666%;
+  }
+
+  /* line 340, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-12 {
+    width: 100%;
+  }
+
+  /* line 343, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-push-0 {
+    left: auto;
+  }
+
+  /* line 346, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-push-1 {
+    left: 8.333333333333332%;
+  }
+
+  /* line 349, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-push-2 {
+    left: 16.666666666666664%;
+  }
+
+  /* line 352, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-push-3 {
+    left: 25%;
+  }
+
+  /* line 355, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-push-4 {
+    left: 33.33333333333333%;
+  }
+
+  /* line 358, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-push-5 {
+    left: 41.66666666666667%;
+  }
+
+  /* line 361, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-push-6 {
+    left: 50%;
+  }
+
+  /* line 364, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-push-7 {
+    left: 58.333333333333336%;
+  }
+
+  /* line 367, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-push-8 {
+    left: 66.66666666666666%;
+  }
+
+  /* line 370, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-push-9 {
+    left: 75%;
+  }
+
+  /* line 373, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-push-10 {
+    left: 83.33333333333334%;
+  }
+
+  /* line 376, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-push-11 {
+    left: 91.66666666666666%;
+  }
+
+  /* line 379, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-pull-0 {
+    right: auto;
+  }
+
+  /* line 382, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-pull-1 {
+    right: 8.333333333333332%;
+  }
+
+  /* line 385, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-pull-2 {
+    right: 16.666666666666664%;
+  }
+
+  /* line 388, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-pull-3 {
+    right: 25%;
+  }
+
+  /* line 391, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-pull-4 {
+    right: 33.33333333333333%;
+  }
+
+  /* line 394, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-pull-5 {
+    right: 41.66666666666667%;
+  }
+
+  /* line 397, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-pull-6 {
+    right: 50%;
+  }
+
+  /* line 400, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-pull-7 {
+    right: 58.333333333333336%;
+  }
+
+  /* line 403, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-pull-8 {
+    right: 66.66666666666666%;
+  }
+
+  /* line 406, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-pull-9 {
+    right: 75%;
+  }
+
+  /* line 409, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-pull-10 {
+    right: 83.33333333333334%;
+  }
+
+  /* line 412, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-pull-11 {
+    right: 91.66666666666666%;
+  }
+
+  /* line 415, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-offset-0 {
+    margin-left: 0;
+  }
+
+  /* line 418, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+
+  /* line 421, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+
+  /* line 424, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 427, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+
+  /* line 430, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+
+  /* line 433, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 436, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+
+  /* line 439, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+
+  /* line 442, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 445, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+
+  /* line 448, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-md-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 453, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .container {
+    max-width: 1170px;
+  }
+
+  /* line 466, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11 {
+    float: left;
+  }
+
+  /* line 469, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-1 {
+    width: 8.333333333333332%;
+  }
+
+  /* line 472, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-2 {
+    width: 16.666666666666664%;
+  }
+
+  /* line 475, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  /* line 478, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-4 {
+    width: 33.33333333333333%;
+  }
+
+  /* line 481, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-5 {
+    width: 41.66666666666667%;
+  }
+
+  /* line 484, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  /* line 487, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-7 {
+    width: 58.333333333333336%;
+  }
+
+  /* line 490, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-8 {
+    width: 66.66666666666666%;
+  }
+
+  /* line 493, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  /* line 496, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-10 {
+    width: 83.33333333333334%;
+  }
+
+  /* line 499, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-11 {
+    width: 91.66666666666666%;
+  }
+
+  /* line 502, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  /* line 505, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-push-0 {
+    left: auto;
+  }
+
+  /* line 508, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-push-1 {
+    left: 8.333333333333332%;
+  }
+
+  /* line 511, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-push-2 {
+    left: 16.666666666666664%;
+  }
+
+  /* line 514, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-push-3 {
+    left: 25%;
+  }
+
+  /* line 517, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-push-4 {
+    left: 33.33333333333333%;
+  }
+
+  /* line 520, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-push-5 {
+    left: 41.66666666666667%;
+  }
+
+  /* line 523, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-push-6 {
+    left: 50%;
+  }
+
+  /* line 526, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-push-7 {
+    left: 58.333333333333336%;
+  }
+
+  /* line 529, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-push-8 {
+    left: 66.66666666666666%;
+  }
+
+  /* line 532, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-push-9 {
+    left: 75%;
+  }
+
+  /* line 535, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-push-10 {
+    left: 83.33333333333334%;
+  }
+
+  /* line 538, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-push-11 {
+    left: 91.66666666666666%;
+  }
+
+  /* line 541, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-pull-0 {
+    right: auto;
+  }
+
+  /* line 544, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-pull-1 {
+    right: 8.333333333333332%;
+  }
+
+  /* line 547, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-pull-2 {
+    right: 16.666666666666664%;
+  }
+
+  /* line 550, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+
+  /* line 553, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-pull-4 {
+    right: 33.33333333333333%;
+  }
+
+  /* line 556, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-pull-5 {
+    right: 41.66666666666667%;
+  }
+
+  /* line 559, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+
+  /* line 562, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-pull-7 {
+    right: 58.333333333333336%;
+  }
+
+  /* line 565, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-pull-8 {
+    right: 66.66666666666666%;
+  }
+
+  /* line 568, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+
+  /* line 571, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-pull-10 {
+    right: 83.33333333333334%;
+  }
+
+  /* line 574, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-pull-11 {
+    right: 91.66666666666666%;
+  }
+
+  /* line 577, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-offset-0 {
+    margin-left: 0;
+  }
+
+  /* line 580, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+
+  /* line 583, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+
+  /* line 586, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 589, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+
+  /* line 592, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+
+  /* line 595, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 598, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+
+  /* line 601, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+
+  /* line 604, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 607, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+
+  /* line 610, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_grid.scss */
+  .col-lg-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("assets/fonts/font-awesome/fontawesome-webfont.eot?v=3.1.0");
+  src: url("assets/fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=3.1.0") format("embedded-opentype"), url("assets/fonts/font-awesome/fontawesome-webfont.woff?v=3.1.0") format("woff"), url("assets/fonts/font-awesome/fontawesome-webfont.ttf?v=3.1.0") format("truetype"), url("assets/fonts/font-awesome/fontawesome-webfont.svg#fontawesomeregular?v=3.1.0") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-large:before {
+  vertical-align: -10%;
+  font-size: 1.3333333333333333em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+a [class^="icon-"], a [class*=" icon-"], a [class^="icon-"]:before, a [class*=" icon-"]:before {
+  display: inline;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+[class^="icon-"].icon-fixed-width, [class*=" icon-"].icon-fixed-width {
+  display: inline-block;
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+[class^="icon-"].icon-fixed-width.icon-large, [class*=" icon-"].icon-fixed-width.icon-large {
+  width: 1.5714285714285714em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+ul.icons-ul {
+  list-style-type: none;
+  text-indent: -0.7142857142857143em;
+  margin-left: 2.142857142857143em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+ul.icons-ul > li .icon-li {
+  width: .7142857142857143em;
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+[class^="icon-"].hide, [class*=" icon-"].hide {
+  display: none;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-muted {
+  color: #eee;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-light {
+  color: #fff;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-dark {
+  color: #333;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-border {
+  border: solid 1px #eee;
+  padding: .2em .25em .15em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-2x {
+  font-size: 2em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-2x.icon-border {
+  border-width: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-3x {
+  font-size: 3em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-3x.icon-border {
+  border-width: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-4x {
+  font-size: 4em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-4x.icon-border {
+  border-width: 4px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-5x {
+  font-size: 5em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-5x.icon-border {
+  border-width: 5px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+[class^="icon-"].pull-left, [class*=" icon-"].pull-left {
+  margin-right: .3em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+[class^="icon-"].pull-right, [class*=" icon-"].pull-right {
+  margin-left: .3em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+  margin-top: 0;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-white, .nav-pills > .active > a > [class^="icon-"], .nav-pills > .active > a > [class*=" icon-"], .nav-list > .active > a > [class^="icon-"], .nav-list > .active > a > [class*=" icon-"], .navbar-inverse .nav > .active > a > [class^="icon-"], .navbar-inverse .nav > .active > a > [class*=" icon-"], .dropdown-menu > li > a:hover > [class^="icon-"], .dropdown-menu > li > a:hover > [class*=" icon-"], .dropdown-menu > .active > a > [class^="icon-"], .dropdown-menu > .active > a > [class*=" icon-"], .dropdown-submenu:hover > a > [class^="icon-"], .dropdown-submenu:hover > a > [class*=" icon-"] {
+  background-image: none;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.btn [class^="icon-"].icon-large, .nav [class^="icon-"].icon-large, .btn [class*=" icon-"].icon-large, .nav [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.btn [class^="icon-"].icon-spin, .nav [class^="icon-"].icon-spin, .btn [class*=" icon-"].icon-spin, .nav [class*=" icon-"].icon-spin {
+  display: inline-block;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.nav-tabs [class^="icon-"], .nav-pills [class^="icon-"], .nav-tabs [class*=" icon-"], .nav-pills [class*=" icon-"], .nav-tabs [class^="icon-"].icon-large, .nav-pills [class^="icon-"].icon-large, .nav-tabs [class*=" icon-"].icon-large, .nav-pills [class*=" icon-"].icon-large {
+  line-height: .9em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.btn [class^="icon-"].pull-left.icon-2x, .btn [class*=" icon-"].pull-left.icon-2x, .btn [class^="icon-"].pull-right.icon-2x, .btn [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .18em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.btn [class^="icon-"].icon-spin.icon-large, .btn [class*=" icon-"].icon-spin.icon-large {
+  line-height: .8em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.btn.btn-small [class^="icon-"].pull-left.icon-2x, .btn.btn-small [class*=" icon-"].pull-left.icon-2x, .btn.btn-small [class^="icon-"].pull-right.icon-2x, .btn.btn-small [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .25em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.btn.btn-large [class^="icon-"], .btn.btn-large [class*=" icon-"] {
+  margin-top: 0;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large [class*=" icon-"].pull-left.icon-2x, .btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
+  margin-top: .05em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large [class*=" icon-"].pull-left.icon-2x {
+  margin-right: .2em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
+  margin-left: .2em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: -35%;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-stack [class^="icon-"], .icon-stack [class*=" icon-"] {
+  display: block;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+  line-height: inherit;
+  *line-height: 2em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-stack .icon-stack-base {
+  font-size: 2em;
+  *line-height: 1em;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-spin {
+  display: inline-block;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+@-moz-keyframes spin {
+  /* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  /* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes spin {
+  /* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  /* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+
+@-ms-keyframes spin {
+  /* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+
+  /* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+  100% {
+    -ms-transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  /* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-rotate-90:before {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-rotate-180:before {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-rotate-270:before {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-flip-horizontal:before {
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-flip-vertical:before {
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-glass:before {
+  content: "\f000";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-music:before {
+  content: "\f001";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-search:before {
+  content: "\f002";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-envelope:before {
+  content: "\f003";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-heart:before {
+  content: "\f004";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-star:before {
+  content: "\f005";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-star-empty:before {
+  content: "\f006";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-user:before {
+  content: "\f007";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-film:before {
+  content: "\f008";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-th-large:before {
+  content: "\f009";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-th:before {
+  content: "\f00a";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-th-list:before {
+  content: "\f00b";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-ok:before {
+  content: "\f00c";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-remove:before {
+  content: "\f00d";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-zoom-in:before {
+  content: "\f00e";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-zoom-out:before {
+  content: "\f010";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-off:before {
+  content: "\f011";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-signal:before {
+  content: "\f012";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-cog:before {
+  content: "\f013";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-trash:before {
+  content: "\f014";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-home:before {
+  content: "\f015";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-file:before {
+  content: "\f016";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-time:before {
+  content: "\f017";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-road:before {
+  content: "\f018";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-download-alt:before {
+  content: "\f019";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-download:before {
+  content: "\f01a";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-upload:before {
+  content: "\f01b";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-inbox:before {
+  content: "\f01c";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-play-circle:before {
+  content: "\f01d";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-repeat:before, .icon-rotate-right:before {
+  content: "\f01e";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-refresh:before {
+  content: "\f021";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-list-alt:before {
+  content: "\f022";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-lock:before {
+  content: "\f023";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-flag:before {
+  content: "\f024";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-headphones:before {
+  content: "\f025";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-volume-off:before {
+  content: "\f026";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-volume-down:before {
+  content: "\f027";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-volume-up:before {
+  content: "\f028";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-qrcode:before {
+  content: "\f029";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-barcode:before {
+  content: "\f02a";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-tag:before {
+  content: "\f02b";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-tags:before {
+  content: "\f02c";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-book:before {
+  content: "\f02d";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-bookmark:before {
+  content: "\f02e";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-print:before {
+  content: "\f02f";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-camera:before {
+  content: "\f030";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-font:before {
+  content: "\f031";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-bold:before {
+  content: "\f032";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-italic:before {
+  content: "\f033";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-text-height:before {
+  content: "\f034";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-text-width:before {
+  content: "\f035";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-align-left:before {
+  content: "\f036";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-align-center:before {
+  content: "\f037";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-align-right:before {
+  content: "\f038";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-align-justify:before {
+  content: "\f039";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-list:before {
+  content: "\f03a";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-indent-left:before {
+  content: "\f03b";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-indent-right:before {
+  content: "\f03c";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-facetime-video:before {
+  content: "\f03d";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-picture:before {
+  content: "\f03e";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-pencil:before {
+  content: "\f040";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-map-marker:before {
+  content: "\f041";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-adjust:before {
+  content: "\f042";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-tint:before {
+  content: "\f043";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-edit:before {
+  content: "\f044";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-share:before {
+  content: "\f045";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-check:before {
+  content: "\f046";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-move:before {
+  content: "\f047";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-step-backward:before {
+  content: "\f048";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-fast-backward:before {
+  content: "\f049";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-backward:before {
+  content: "\f04a";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-play:before {
+  content: "\f04b";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-pause:before {
+  content: "\f04c";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-stop:before {
+  content: "\f04d";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-forward:before {
+  content: "\f04e";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-fast-forward:before {
+  content: "\f050";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-step-forward:before {
+  content: "\f051";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-eject:before {
+  content: "\f052";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-chevron-left:before {
+  content: "\f053";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-chevron-right:before {
+  content: "\f054";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-plus-sign:before {
+  content: "\f055";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-minus-sign:before {
+  content: "\f056";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-remove-sign:before {
+  content: "\f057";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-ok-sign:before {
+  content: "\f058";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-question-sign:before {
+  content: "\f059";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-info-sign:before {
+  content: "\f05a";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-screenshot:before {
+  content: "\f05b";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-remove-circle:before {
+  content: "\f05c";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-ok-circle:before {
+  content: "\f05d";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-ban-circle:before {
+  content: "\f05e";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-arrow-left:before {
+  content: "\f060";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-arrow-right:before {
+  content: "\f061";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-arrow-up:before {
+  content: "\f062";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-arrow-down:before {
+  content: "\f063";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-share-alt:before, .icon-mail-forward:before {
+  content: "\f064";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-resize-full:before {
+  content: "\f065";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-resize-small:before {
+  content: "\f066";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-plus:before {
+  content: "\f067";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-minus:before {
+  content: "\f068";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-asterisk:before {
+  content: "\f069";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-exclamation-sign:before {
+  content: "\f06a";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-gift:before {
+  content: "\f06b";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-leaf:before {
+  content: "\f06c";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-fire:before {
+  content: "\f06d";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-eye-open:before {
+  content: "\f06e";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-eye-close:before {
+  content: "\f070";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-warning-sign:before {
+  content: "\f071";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-plane:before {
+  content: "\f072";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-calendar:before {
+  content: "\f073";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-random:before {
+  content: "\f074";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-comment:before {
+  content: "\f075";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-magnet:before {
+  content: "\f076";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-chevron-up:before {
+  content: "\f077";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-chevron-down:before {
+  content: "\f078";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-retweet:before {
+  content: "\f079";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-shopping-cart:before {
+  content: "\f07a";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-folder-close:before {
+  content: "\f07b";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-folder-open:before {
+  content: "\f07c";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-resize-vertical:before {
+  content: "\f07d";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-resize-horizontal:before {
+  content: "\f07e";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-bar-chart:before {
+  content: "\f080";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-twitter-sign:before {
+  content: "\f081";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-facebook-sign:before {
+  content: "\f082";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-camera-retro:before {
+  content: "\f083";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-key:before {
+  content: "\f084";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-cogs:before {
+  content: "\f085";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-comments:before {
+  content: "\f086";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-thumbs-up:before {
+  content: "\f087";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-thumbs-down:before {
+  content: "\f088";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-star-half:before {
+  content: "\f089";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-heart-empty:before {
+  content: "\f08a";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-signout:before {
+  content: "\f08b";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-linkedin-sign:before {
+  content: "\f08c";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-pushpin:before {
+  content: "\f08d";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-external-link:before {
+  content: "\f08e";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-signin:before {
+  content: "\f090";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-trophy:before {
+  content: "\f091";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-github-sign:before {
+  content: "\f092";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-upload-alt:before {
+  content: "\f093";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-lemon:before {
+  content: "\f094";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-phone:before {
+  content: "\f095";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-check-empty:before {
+  content: "\f096";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-bookmark-empty:before {
+  content: "\f097";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-phone-sign:before {
+  content: "\f098";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-twitter:before {
+  content: "\f099";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-github:before {
+  content: "\f09b";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-unlock:before {
+  content: "\f09c";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-credit-card:before {
+  content: "\f09d";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-rss:before {
+  content: "\f09e";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-hdd:before {
+  content: "\f0a0";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-bullhorn:before {
+  content: "\f0a1";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-bell:before {
+  content: "\f0a2";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-certificate:before {
+  content: "\f0a3";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-hand-right:before {
+  content: "\f0a4";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-hand-left:before {
+  content: "\f0a5";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-hand-up:before {
+  content: "\f0a6";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-hand-down:before {
+  content: "\f0a7";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-circle-arrow-left:before {
+  content: "\f0a8";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-circle-arrow-right:before {
+  content: "\f0a9";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-circle-arrow-up:before {
+  content: "\f0aa";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-circle-arrow-down:before {
+  content: "\f0ab";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-globe:before {
+  content: "\f0ac";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-wrench:before {
+  content: "\f0ad";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-tasks:before {
+  content: "\f0ae";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-filter:before {
+  content: "\f0b0";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-briefcase:before {
+  content: "\f0b1";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-fullscreen:before {
+  content: "\f0b2";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-group:before {
+  content: "\f0c0";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-link:before {
+  content: "\f0c1";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-cloud:before {
+  content: "\f0c2";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-beaker:before {
+  content: "\f0c3";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-cut:before {
+  content: "\f0c4";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-copy:before {
+  content: "\f0c5";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-paper-clip:before {
+  content: "\f0c6";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-save:before {
+  content: "\f0c7";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-sign-blank:before {
+  content: "\f0c8";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-reorder:before {
+  content: "\f0c9";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-list-ul:before {
+  content: "\f0ca";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-list-ol:before {
+  content: "\f0cb";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-strikethrough:before {
+  content: "\f0cc";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-underline:before {
+  content: "\f0cd";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-table:before {
+  content: "\f0ce";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-magic:before {
+  content: "\f0d0";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-truck:before {
+  content: "\f0d1";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-pinterest-sign:before {
+  content: "\f0d3";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-google-plus-sign:before {
+  content: "\f0d4";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-money:before {
+  content: "\f0d6";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-caret-down:before {
+  content: "\f0d7";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-caret-up:before {
+  content: "\f0d8";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-caret-left:before {
+  content: "\f0d9";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-caret-right:before {
+  content: "\f0da";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-columns:before {
+  content: "\f0db";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-sort:before {
+  content: "\f0dc";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-sort-down:before {
+  content: "\f0dd";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-sort-up:before {
+  content: "\f0de";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-envelope-alt:before {
+  content: "\f0e0";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-undo:before, .icon-rotate-left:before {
+  content: "\f0e2";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-legal:before {
+  content: "\f0e3";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-dashboard:before {
+  content: "\f0e4";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-comment-alt:before {
+  content: "\f0e5";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-comments-alt:before {
+  content: "\f0e6";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-bolt:before {
+  content: "\f0e7";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-sitemap:before {
+  content: "\f0e8";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-umbrella:before {
+  content: "\f0e9";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-paste:before {
+  content: "\f0ea";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-lightbulb:before {
+  content: "\f0eb";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-exchange:before {
+  content: "\f0ec";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-cloud-download:before {
+  content: "\f0ed";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-cloud-upload:before {
+  content: "\f0ee";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-user-md:before {
+  content: "\f0f0";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-stethoscope:before {
+  content: "\f0f1";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-suitcase:before {
+  content: "\f0f2";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-bell-alt:before {
+  content: "\f0f3";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-coffee:before {
+  content: "\f0f4";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-food:before {
+  content: "\f0f5";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-file-alt:before {
+  content: "\f0f6";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-building:before {
+  content: "\f0f7";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-hospital:before {
+  content: "\f0f8";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-ambulance:before {
+  content: "\f0f9";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-medkit:before {
+  content: "\f0fa";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-fighter-jet:before {
+  content: "\f0fb";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-beer:before {
+  content: "\f0fc";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-h-sign:before {
+  content: "\f0fd";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-plus-sign-alt:before {
+  content: "\f0fe";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-double-angle-left:before {
+  content: "\f100";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-double-angle-right:before {
+  content: "\f101";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-double-angle-up:before {
+  content: "\f102";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-double-angle-down:before {
+  content: "\f103";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-angle-left:before {
+  content: "\f104";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-angle-right:before {
+  content: "\f105";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-angle-up:before {
+  content: "\f106";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-angle-down:before {
+  content: "\f107";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-desktop:before {
+  content: "\f108";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-laptop:before {
+  content: "\f109";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-tablet:before {
+  content: "\f10a";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-mobile-phone:before {
+  content: "\f10b";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-circle-blank:before {
+  content: "\f10c";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-quote-left:before {
+  content: "\f10d";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-quote-right:before {
+  content: "\f10e";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-spinner:before {
+  content: "\f110";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-circle:before {
+  content: "\f111";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-reply:before, .icon-mail-reply:before {
+  content: "\f112";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-folder-close-alt:before {
+  content: "\f114";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-folder-open-alt:before {
+  content: "\f115";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-expand-alt:before {
+  content: "\f116";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-collapse-alt:before {
+  content: "\f117";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-smile:before {
+  content: "\f118";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-frown:before {
+  content: "\f119";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-meh:before {
+  content: "\f11a";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-gamepad:before {
+  content: "\f11b";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-keyboard:before {
+  content: "\f11c";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-flag-alt:before {
+  content: "\f11d";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-flag-checkered:before {
+  content: "\f11e";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-terminal:before {
+  content: "\f120";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-code:before {
+  content: "\f121";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-reply-all:before {
+  content: "\f122";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-mail-reply-all:before {
+  content: "\f122";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-star-half-full:before, .icon-star-half-empty:before {
+  content: "\f123";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-location-arrow:before {
+  content: "\f124";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-crop:before {
+  content: "\f125";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-code-fork:before {
+  content: "\f126";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-unlink:before {
+  content: "\f127";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-question:before {
+  content: "\f128";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-info:before {
+  content: "\f129";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-exclamation:before {
+  content: "\f12a";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-superscript:before {
+  content: "\f12b";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-subscript:before {
+  content: "\f12c";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-eraser:before {
+  content: "\f12d";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-puzzle-piece:before {
+  content: "\f12e";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-microphone:before {
+  content: "\f130";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-microphone-off:before {
+  content: "\f131";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-shield:before {
+  content: "\f132";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-calendar-empty:before {
+  content: "\f133";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-fire-extinguisher:before {
+  content: "\f134";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-rocket:before {
+  content: "\f135";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-maxcdn:before {
+  content: "\f136";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-chevron-sign-left:before {
+  content: "\f137";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-chevron-sign-right:before {
+  content: "\f138";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-chevron-sign-up:before {
+  content: "\f139";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-chevron-sign-down:before {
+  content: "\f13a";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-html5:before {
+  content: "\f13b";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-css3:before {
+  content: "\f13c";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-anchor:before {
+  content: "\f13d";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-unlock-alt:before {
+  content: "\f13e";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-bullseye:before {
+  content: "\f140";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-ellipsis-horizontal:before {
+  content: "\f141";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-ellipsis-vertical:before {
+  content: "\f142";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-rss-sign:before {
+  content: "\f143";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-play-sign:before {
+  content: "\f144";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-ticket:before {
+  content: "\f145";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-minus-sign-alt:before {
+  content: "\f146";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-check-minus:before {
+  content: "\f147";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-level-up:before {
+  content: "\f148";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-level-down:before {
+  content: "\f149";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-check-sign:before {
+  content: "\f14a";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-edit-sign:before {
+  content: "\f14b";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-external-link-sign:before {
+  content: "\f14c";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_icons.scss */
+.icon-share-sign:before {
+  content: "\f14d";
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+body, select, input, textarea {
+  color: #333;
+}
+
+/* line 5, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+p {
+  margin: 18px 0px;
+}
+
+/* line 9, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+a {
+  color: #03f;
+  text-decoration: none;
+}
+
+/* line 13, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+a:hover {
+  color: #333;
+}
+
+/* line 17, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+h1, .h1 {
+  font-size: 3em;
+}
+
+/* line 20, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+h2, .h2 {
+  font-size: 2.5em;
+}
+
+/* line 23, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+h3, .h3 {
+  font-size: 2em;
+}
+
+/* line 26, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+h4, .h4 {
+  font-size: 1.5em;
+}
+
+/* line 29, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+h5, .h5 {
+  font-size: 1.2em;
+}
+
+/* line 32, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+h6, .h6 {
+  font-size: 1em;
+}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+/* line 37, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+::-moz-selection {
+  background: #fcd700;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 38, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+::selection {
+  background: #fcd700;
+  color: #fff;
+  text-shadow: none;
+}
+
+/*  j.mp/webkit-tap-highlight-color */
+/* line 41, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+a:link {
+  -webkit-tap-highlight-color: #fcd700;
+}
+
+/* line 43, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+ins {
+  background-color: #fcd700;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 44, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+mark {
+  background-color: #fcd700;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Mozilla dosen't style place holders by default */
+/* line 47, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+input:-moz-placeholder {
+  color: #a9a9a9;
+}
+
+/* line 48, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_typography.scss */
+textarea:-moz-placeholder {
+  color: #a9a9a9;
+}
+
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+/* line 9, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+/* line 14, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+/* line 23, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+@media only screen and (min-width: 992px) {
+  /* line 28, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+  .js .nav-collapse {
+    position: relative;
+  }
+
+  /* line 31, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+
+  /* line 34, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+  .nav-toggle {
+    display: none;
+  }
+}
+/* line 39, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+.nav {
+  font-size: 14px;
+}
+/* line 42, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+.nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+  text-align: justify;
+}
+@media only screen and (min-width: 992px) {
+  /* line 42, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+  .nav ul {
+    text-align: right;
+  }
+  /* line 53, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+  .nav ul:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+  }
+}
+/* line 61, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+.nav li {
+  width: 100%;
+  display: block;
+  background: #262626;
+  margin-bottom: 3px;
+}
+@media only screen and (min-width: 992px) {
+  /* line 61, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+  .nav li {
+    width: auto;
+    display: inline-block;
+  }
+}
+/* line 73, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+.nav a {
+  padding: 10px;
+  display: block;
+  color: #bada55;
+}
+/* line 78, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+.nav a:hover {
+  color: red;
+}
+
+/* line 86, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+.nav-toggle:after {
+  content: '\f0c9';
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 1.5em/1 'FontAwesome';
+  vertical-align: middle;
+  padding-left: 10px;
+  color: #bada55;
+}
+@media only screen and (min-width: 992px) {
+  /* line 85, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* this targets all sub menus */
+  /* line 104, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+  .nav ul ul {
+    display: none;
+    /* hide all sub menus from view */
+    position: absolute;
+    top: 35px;
+    /* this should be the same height as the top level menu -- height + padding + borders */
+    text-align: left;
+  }
+  /* line 110, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+  .nav ul ul li {
+    /* this targets all submenu items */
+    width: 250px;
+    /* set to the width you want your sub menus to be. This needs to match the value we set below */
+    background: #262626;
+    display: block;
+  }
+  /* line 116, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+  .nav ul ul li a {
+    padding: 5px 10px;
+  }
+
+  /* line 122, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_nav.scss */
+  .nav ul li:hover > ul {
+    display: block;
+    /* show sub menus when hovering over a parent */
+  }
+}
+/* line 1, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_pagination.scss */
+.pagination {
+  clear: both;
+  padding: 20px 0;
+  position: relative;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+/* line 9, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_pagination.scss */
+.pagination span, .pagination a {
+  display: block;
+  float: left;
+  margin: 2px 2px 2px 0;
+  padding: 6px 9px 5px 9px;
+  text-decoration: none;
+  width: auto;
+  color: #fff;
+  background: #555;
+}
+
+/* line 20, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_pagination.scss */
+.pagination a:hover {
+  color: #fff;
+  background: #3279BB;
+}
+
+/* line 25, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_pagination.scss */
+.pagination .current {
+  padding: 6px 9px 5px 9px;
+  background: #3279BB;
+  color: #fff;
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+/* line 3, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+/* line 8, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+/* line 13, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+/* line 18, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+/* line 23, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+/* line 28, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+/* line 33, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+/* line 37, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+/* line 42, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 48, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+/* line 56, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+/* line 60, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+/* line 64, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+/* line 68, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+/* line 77, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+/* line 84, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+.sticky {
+  color: red;
+}
+
+/* line 86, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+.gallery-caption {
+  color: red;
+}
+
+/* line 88, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-core.scss */
+.bypostauthor {
+  color: red;
+}
+
+/* == WordPress CSS - Default WordPress Widgets == */
+/* links widget */
+/* meta widget */
+/* pages widget */
+/* recent-posts widget */
+/* archives widget */
+/* tag-cloud widget */
+/* calendar widget */
+/* category widget */
+/* recent-comments widget */
+/* search widget */
+/* text widget */
+/* == WP CSS - post_class() == */
+/* line 6, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-post.scss */
+.post ul {
+  list-style: disc;
+}
+/* line 10, E:/Programs/wamp/www/nackt/wp-content/themes/nackt-five/scss/_wp-post.scss */
+.post ol {
+  list-style: upper-roman;
+}

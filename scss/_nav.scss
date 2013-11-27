@@ -1,0 +1,125 @@
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+@include breakpoint(med) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
+
+.nav {
+    font-size: 14px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: block;
+        list-style: none;
+        text-align: justify;
+
+        // Use this to have wide-screen navigation stay justified
+         @include breakpoint(med) {
+            text-align: right;
+            &:after {
+                content: '';
+                width: 100%;
+                display: inline-block;
+            }
+         }
+    }
+
+    li {
+        width: 100%;
+        display: block;
+        background: #262626;
+        margin-bottom: 3px;
+
+        @include breakpoint(med) {
+            width:auto;
+            display: inline-block;
+        }
+    }
+
+    a {
+        padding: 10px;
+        display: block;
+        color: $mainColor;
+
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+// Nav Button
+.nav-toggle {
+    &:after {
+        content: '\f0c9';
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        font:normal 1.5em/1 'FontAwesome';
+        vertical-align: middle;
+        padding-left: 10px;
+        color: $mainColor;
+    }
+
+    @include breakpoint(med) {
+        display: none;
+    }
+}
+
+// Wide Screen Layout
+@include breakpoint(med) {
+    /* this targets all sub menus */
+    .nav ul ul {
+        display: none; /* hide all sub menus from view */
+        position: absolute;
+        top: 35px; /* this should be the same height as the top level menu -- height + padding + borders */
+        text-align: left;
+        
+        li {
+            /* this targets all submenu items */
+            width: 250px; /* set to the width you want your sub menus to be. This needs to match the value we set below */
+            background: #262626;
+            display: block;
+
+            a {
+                padding: 5px 10px;
+            }
+        }
+    }
+
+    .nav ul li:hover > ul {
+        display: block; /* show sub menus when hovering over a parent */
+    }
+}
