@@ -25,16 +25,16 @@
 				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
 			),
 
-			array(
-				'name'     				=> 'Visual Composer', // The plugin name
-				'slug'     				=> 'js_composer', // The plugin slug (typically the folder name)
-				'source'   				=> get_stylesheet_directory() . '/assets/req-plugins/plugins/js_composer.zip', // The plugin source
-				'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
-				'version' 				=> '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-				'force_activation' 		=> true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-				'force_deactivation' 	=> true, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
-				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
-			),
+//			array(
+//				'name'     				=> 'Visual Composer', // The plugin name
+//				'slug'     				=> 'js_composer', // The plugin slug (typically the folder name)
+//				'source'   				=> get_stylesheet_directory() . '/assets/req-plugins/plugins/js_composer.zip', // The plugin source
+//				'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
+//				'version' 				=> '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+//				'force_activation' 		=> true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+//				'force_deactivation' 	=> true, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+//				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
+//			),
 
 			// This is how to include a plugin from the WordPress Plugin Repository
 			array(
